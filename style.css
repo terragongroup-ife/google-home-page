@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 25px;
+    position: relative;
+    height: 1500px;
+}
+nav#top_nav, .sign_in_button, .list {
+    font-family: arial,sans-serif;
+    font-size: 0.75em;
+}
+/*top nav styles*/
+nav#top_nav {
+    float: right;
+    margin-top: 12px;
+    margin-right: 141px;
+}
+nav#top_nav a{
+    padding: 5px;
+    color: rgba(0,0,0,0.87);
+}
+nav#top_nav a:hover {
+    text-decoration: underline;
+}
+.swap-on-hover img{ 
+    position: absolute;
+    top: 32px;
+    right: 128px;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+}
+.swap-on-hover #first {
+    z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+.swap-on-hover:hover > #first {
+    opacity: 0;
+}
+.sign_in_button {
+    position: absolute;
+    top: 27px;
+    right: 35px;
+    border: 1px solid #4285f4;
+    color: white;
+    background-color: #4285f4;
+    border-radius: 2px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+nav a, a.sign_in_button {
+    text-decoration: none;
+}
+/*google logo and search box styles*/
+.google_pic {
+    position: absolute;
+    top: 182px;
+    left: 500px;
+    width: 268px;
+    height: 98px;
+}
+.search_box {
+    position: absolute;
+    top: 292px;
+    right: 23.5%;
+    padding: 12px;
+    margin: 20px;
+    border: 1px solid rgba(201,202,201);
+    box-shadow: 0px 0.7px rgba(201,201,201);
+    width: 48%;
+    height: 16px;
+}
+.mic {
+    position: absolute;
+    top: 19.8em;
+    right: 20.5em;
+    width: 30px;
+    height: 30px;
+}
+.mic:hover {
+    cursor: pointer;
+}
+/*bottom navigation styles*/
+nav#bottom_nav {
+    position: absolute;
+    top: 25em;
+    right: 31em;
+}
+nav#bottom_nav span.shift_right {
+    margin-left: 18px;
+}
+nav#bottom_nav span {
+    border-radius: 2px;
+    padding: 12px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+nav#bottom_nav a {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    color: #757575;
+    font-size: 13px;
+}
+nav#bottom_nav span:hover {
+    border: 1px solid #c6c6c6;
+}
+nav#bottom_nav span:hover a {
+    color:  rgba(0,0,0,0.87);
+}
+.list {
+    position: absolute;
+    top: 38.5em;
+    right: 36em;
+}
+.list ul li {
+    display: inline;
+    padding: 10px;
+}
+.list a {
+    text-decoration: none;
+}
+.list a:hover {
+    text-decoration: underline;
+}
+#settings {
+    position: absolute;
+    position: fixed;
+    bottom: 16px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
+}
